@@ -10,4 +10,12 @@ public class Number {
         Assertions.assertEquals("Weird", number.checkNumber(3));
     }
 
+    @Test
+    void givenOneEvenNumberBetweenRangSixToTwenty_WhenCheckedWeird_ThenReturnWeird() {
+        WeirdOrNotWeirdNumber number = new WeirdOrNotWeirdNumber();
+
+        Assertions.assertEquals("Weird", number.checkNumber(6));
+    }
+
+
 }
