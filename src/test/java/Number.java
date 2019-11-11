@@ -24,5 +24,11 @@ public class Number {
         Assertions.assertEquals("Not Weird", number.checkNumber(2));
     }
 
+    @Test
+    void givenOneEvenNumberGreaterThanTwenty_WhenCheckedNotWeird_ThenReturnNotWeird() {
+        WeirdOrNotWeirdNumber number = new WeirdOrNotWeirdNumber();
+
+        Assertions.assertEquals("Not Weird", number.checkNumber(22));
+    }
 
 }

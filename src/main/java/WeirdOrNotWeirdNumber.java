@@ -7,7 +7,7 @@ public class WeirdOrNotWeirdNumber {
             if ((number >= 6 && number <= 20)) {
                 return "Weird";
             }
-            if (number >= 2 && number <= 5) {
+            if ((number >= 2 && number <= 5) || number >= 20) {
                 return "Not Weird";
             }
         }
