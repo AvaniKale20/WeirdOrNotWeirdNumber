@@ -17,5 +17,12 @@ public class Number {
         Assertions.assertEquals("Weird", number.checkNumber(6));
     }
 
+    @Test
+    void givenOneEvenNumberRangeBetweenTwoToFive_WhenCheckedNotWeird_ThenReturnNotWeird() {
+        WeirdOrNotWeirdNumber number = new WeirdOrNotWeirdNumber();
+
+        Assertions.assertEquals("Not Weird", number.checkNumber(2));
+    }
+
 
 }
